@@ -32,15 +32,15 @@
         </template>
         
         <article>
-            <h2>3. Array van objecten</h2>
+            <h2>4. Class </h2>
 
             <section>
-                <h3>3.1 Array definieren</h3>
+                <h3>4.1 Class definieren</h3>
 
                 <p>
-                    Definieer de constante <strong>producten</strong>, <br>
-                    met als waarde een array met 3 objecten.<br>
-                    Elk van deze objecten stelt een product voor en heeft de volgende eigenschappen:
+                    Definieer de class Product, met de volgende eigenschappen. <br>
+                    Definieer ook de constructor, die als argumenten de naam, merk en prijs heeft.<br>
+                    Zorg dat deze argumenten worden overgenomen als de waardes van de eigenschappen van het object.
                 </p>
     
                 <ul>
@@ -48,30 +48,46 @@
                     <li>merk</li>
                     <li>prijs</li>
                 </ul>
+
+
             </section>
 
 
             <section>
-                <h3>3.2. Array doorlopen</h3>
+                <h3>4.2. Objecten instantieren</h3>
                 <p>
-                    Toon hieronder de namen van de procucten (gebruikmakend van de Array), zet een &lt;br&gt; na elke productnaam.
+                    Maak de constante aan: <strong>product1</strong>, met als waarde een nieuw Product.<br>
+                    Verzin zelf de naam, het merk en de prijs van dit product.<br>
+
+                    Toon hieronder de waardes van dit object.
                 </p>
 
-                <p id="product-namen">
-
-                </p>
+                <dl>
+                    <dt>Naam</dt>
+                    <dd id="product-naam">?</dd>
+                    <dt>Merk</dt>
+                    <dd id="product-merk">?</dd>
+                    <dt>Prijs</dt>
+                    <dd id="product-prijs">?</dd>
+                </dl>
             </section>
 
 
             <section>
-                <h3>3.3. Random product</h3>
+                <h3>4.3. Class methode</h3>
                 <p>
-                    Toon bij een druk op de onderstaande knop, een random productnaam uit de array.<br>
-                    <button id="toon-random-product">Random product</button>
+                    Definieer in de class Product de methode <strong>kortingPrijs(percentage)</strong>.<br>
+                    Deze methode moet teruggeven: <em>productprijs * (1 - percentage)</em><br>
+                    Gebruik deze methode om hieronder de korting prijs te tonen.
                 </p>
 
-                <p id="product-random-naam">
+                <p>
+                    Voorbeeld:<br>
+                    Bij een product van 10 euro, geeft <strong>product.kortingPrijs(0.05)</strong> terug: <strong>9.50</strong>
+                </p>
 
+                <p>
+                    Prijs met korting: <span id="product-korting"></span>
                 </p>
             </section>
 
