@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmeren P3 - Oefentoets - Opdracht 3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="header">
+        <h1 id="page-title">
+            Progammeren P3 - Oefentoets - Opdracht 3
+        </h1>
+    </header>
+
+    <main id="main">
+
+        <template id="assignment-article">
+            <article>
+                <h2>Title</h2>
+                <p>Content</p>
+            </article>
+        </template>
+
+        
+        <template id="assignment-section">
+            <section>
+                <h3>Title</h3>
+                <p>Content</p>
+            </section>
+        </template>
+        
+        <article>
+            <h2>3. Array van objecten</h2>
+
+            <section>
+                <h3>3.1 Array definieren</h3>
+
+                <p>
+                    Definieer de constante <strong>producten</strong>, <br>
+                    met als waarde een array met 3 objecten.<br>
+                    Elk van deze objecten stelt een product voor en heeft de volgende eigenschappen:
+                </p>
+    
+                <ul>
+                    <li>naam</li>
+                    <li>merk</li>
+                    <li>prijs</li>
+                </ul>
+            </section>
+
+
+            <section>
+                <h3>3.2. Array doorlopen</h3>
+                <p>
+                    Toon hieronder de namen van de procucten (gebruikmakend van de Array), zet een &lt;br&gt; na elke productnaam.
+                </p>
+
+                <p id="product-namen">
+
+                </p>
+            </section>
+
+
+            <section>
+                <h3>3.3. Random product</h3>
+                <p>
+                    Toon bij een druk op de onderstaande knop, een random productnaam uit de array.<br>
+                    <button id="toon-random-product">Random product</button>
+                </p>
+
+                <p id="product-random-naam">
+
+                </p>
+            </section>
+
+
+            <section>
+                <h3>3.4. Totaal prijs</h3>
+                <p>
+                    Schrijf de functie <strong>totaalPrijs</strong>, <br>
+                    deze functie telt alle prijzen van de producten bij elkaar op en geeft het totaal terug.<br>
+
+                    Gebruik deze functie om hieronder het totaal te tonen.
+                </p>
+
+                <p>
+                    Totaal: <span id="producten-totaal-prijs"></span>
+                </p>
+            </section>
+
+
+        </article>
+
+    </main>
+</body>
+<script src="js/opdracht3.js"></script>
+</html>
