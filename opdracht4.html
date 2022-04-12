@@ -38,15 +38,15 @@
                 <h3>4.1 Class definieren</h3>
 
                 <p>
-                    Definieer de class Product, met de volgende eigenschappen. <br>
-                    Definieer ook de constructor, die als argumenten de naam, merk en prijs heeft.<br>
+                    Definieer de class Docent, met de volgende eigenschappen. <br>
+                    Definieer ook de constructor, die als argumenten de voornaam, achternaam en hobbies heeft.<br>
                     Zorg dat deze argumenten worden overgenomen als de waardes van de eigenschappen van het object.
                 </p>
     
                 <ul>
-                    <li>naam</li>
-                    <li>merk</li>
-                    <li>prijs</li>
+                    <li>voornaam</li>
+                    <li>achternaam</li>
+                    <li>hobbies</li>
                 </ul>
 
 
@@ -56,19 +56,17 @@
             <section>
                 <h3>4.2. Objecten instantieren</h3>
                 <p>
-                    Maak de constante aan: <strong>product1</strong>, met als waarde een nieuw Product.<br>
-                    Verzin zelf de naam, het merk en de prijs van dit product.<br>
+                    Maak de constante aan: <strong>docent1</strong>, met als waarde een nieuwe Docent.<br>
+                    Verzin zelf de voornaam, de achternaam en de hobbies van de docent.<br>
 
-                    Toon hieronder de waardes van dit object.
+                    Toon hieronder de waardes van dit object. Na elke hobby moet een &lt;br&gt;
                 </p>
 
                 <dl>
-                    <dt>Naam</dt>
-                    <dd id="product-naam">?</dd>
-                    <dt>Merk</dt>
-                    <dd id="product-merk">?</dd>
-                    <dt>Prijs</dt>
-                    <dd id="product-prijs">?</dd>
+                    <dt>Naam (volledig)</dt>
+                    <dd id="docent-naam">?</dd>
+                    <dt>hobbies</dt>
+                    <dd id="docent-hobbies">?</dd>
                 </dl>
             </section>
 
@@ -76,47 +74,40 @@
             <section>
                 <h3>4.3. Class methode</h3>
                 <p>
-                    Definieer in de class Product de methode <strong>kortingPrijs(percentage)</strong>.<br>
-                    Deze methode moet teruggeven: <em>productprijs * (1 - percentage)</em><br>
-                    Gebruik deze methode om hieronder de korting prijs te tonen.
+                    Definieer in de class Product de methode <strong>naamEnHobbies</strong>.<br>
+                    Deze methode moet teruggeven: De volledige naam en het aantal hobbies<br>
                 </p>
 
                 <p>
                     Voorbeeld:<br>
-                    Bij een product van 10 euro, geeft <strong>product.kortingPrijs(0.05)</strong> terug: <strong>9.50</strong>
+                    Bij een docent met 4 hobbies: "Marcel Akerboom (4)"
                 </p>
 
                 <p>
-                    Prijs met korting: <span id="product-korting">?</span>
+                    Docent en hobbies: <span id="docent-en-hobbies">?</span>
                 </p>
             </section>
 
             <section>
                 <h3>4.4. Array van objecten</h3>
                 <p>
-                    Definieer de constante <strong>producten</strong>. <br>
-                    Met als waarde een array met 5 objecten die je van de class Product maakt. <br>
-                    Geef voor elk product een waarde mee aan de eigenschappen: naam, merk en prijs <br>
+                    Definieer de constante <strong>docenten</strong>. <br>
+                    Met als waarde een array met 5 objecten die je van de class Docent maakt. <br>
                 </p>
             </section>
 
             <section>
-                <h3>4.5. Totaal prijs met korting</h3>
-                <p>
-                    Maak een functie die een functie genaamd <strong> berekenTotaalKorting </strong>. <br>
-                    Toon in deze functie het totaal bedrag met korting van de objecten binnen de constante <strong> producten </strong> wanneer er op de knop gedrukt word.
-                </p>
+                <h3>4.5. Docenten en hobies</h3>
 
                 <p>
-                    Voorbeeld: <br>
-                    product1.prijs: 10 euro, geeft <strong>product.kortingPrijs(0.05)</strong> terug: <strong>9.50</strong> <br>
-                    product2.prijs: 20 euro, geeft <strong>product.kortingPrijs(0.10)</strong> terug: <strong>18.00</strong> <br><br>
-
-                    Toont <strong> berekenTotaalKorting() </strong> het bedrag: <strong>27.50</strong>
+                    Toon bij een druk op onderstaande knop: de namen en aantal hobbies (4.3) van alle docenten in de array.<br>
+                    Toon elke naam en hobbies in een &lt;li&gt;.
                 </p>
 
-                Totaal bedrag met korting: <span id="producten-totaal-korting">?</span><br>
-                <button id="toon-producten-korting">Totaal bedrag</button>
+                <ul id="docenten-en-hobbies">
+                </ul>
+
+                <button id="toon-docenten-en-hobbies">Hobbies van docenten</button>
             </section>
 
 
